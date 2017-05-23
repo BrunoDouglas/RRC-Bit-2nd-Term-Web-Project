@@ -1,0 +1,60 @@
+	<section class="content-hero submit-video">
+
+		<h2>Submit Your Video!</h2>
+		<form id="formSubmitYours" method="POST" action="#Main" novalidate>
+			<fieldset>
+				<legend>Your information</legend>
+				<ul>
+					<li>
+						<label for="inputName">NickName:</label>
+						<input id="inputName" type="text" name="nickName" />
+						<span class="label" id="inputName_label">You're the famous who?</span>
+						<span class="error" id="inputName_error">Your Nickname is required!</span>
+					</li>
+					
+					<li>
+						<label for="inputPhone">Phone:</label>
+						<input id="inputPhone" type="phone" name="phone" />
+						<span class="label" id="inputPhone_label">Got a phone? Let us know the number!</span>
+
+						<span class="error" id="inputPhone_error">Your phone number is required!</span>
+						<span class="error" id="inputPhone_format_error">Are you sure this phone number looks correct to you?</span>
+					</li>
+					<li>
+						<label for="inputEmail">Email:</label>
+						<input id="inputEmail" type="email" name="email" />
+						<span class="label" id="inputEmail_label">Got an Email? Let us know the address!</span>
+
+						<span class="error" id="inputEmail_error">You email address is required!</span>
+						<span class="error" id="inputEmail_format_error">Are you sure this email address looks correct to you?</span>
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend>Your Awesome Video</legend>
+				<ul>
+					<li>
+						<label for="inputVideoURL">YouTube URL:</label>
+						<input id="inputVideoURL" type="URL" name="videoURL" />
+						<span class="label" id="inputVideoURL_label">Copy and Paste the video's URL here.</span>
+
+						<span class="error" id="inputVideoURL_error">We really need the YouTube video's URL!</span>
+					</li>
+					<li>
+						<label for="inputVideoDescription">Video Description:</label>
+						<textarea id="inputVideoDescription"  name="videoDescription" />
+						<span class="label" id="inputVideoDescription_label">What is so special about this clip? Explain in details: 5000 characters minimum.</span>
+
+						<span class="error" id="inputVideoDescription_error">Describe what's going on on your video! Do you want us to promote your video? then we need the deets! </span>
+					</li>
+
+				</ul>
+
+				<div class="frame-buttons">
+					<input type="submit" value="Submit it!" id="btnSubmit">
+					<input type="reset" value="Reset"	   id="btnReset">
+				</div>
+			</fieldset>
+		</form>
+		
+	</section>
